@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #003366; /* Deep blue from the site */
+  --text-color: #333333;
+  --bg-color: #ffffff;
+  --accent-color: #f7f7f7;
+  --font-family: 'Noto Sans JP', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+.logo span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: block;
+  opacity: 0.7;
+}
+
+.content-card {
+  background-color: var(--accent-color);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.player-container {
+  margin-top: 20px;
+}
+
+audio {
+  width: 100%;
+  height: 50px;
+  filter: sepia(20%) saturate(70%) grayscale(100%) contrast(99%) invert(12%); /* Custom styling to match vibe */
+}
+
+.description {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #666;
+  text-align: left;
+}
+
+.description-box {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+
+.lesson-subtitle {
+  font-size: 1.15rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 15px;
+}
+
+.description-box p {
+  font-size: 0.98rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.02rem;
+}
+
+.description-box p:last-child {
+  margin-bottom: 0;
+}
+
+.highlight {
+  color: var(--primary-color);
+  font-weight: bold;
+  background: linear-gradient(transparent 70%, rgba(0, 51, 102, 0.1) 70%);
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
